@@ -7,11 +7,11 @@ export default function Header() {
         <div className="row">
           <div className="col-12">
             <div className='d-flex justify-content-between'>
-              <div className='m-2'>Logo</div>
+              <img src='./assets/DALogo.jpg' className='m-2 logo' />
               <div className='d-flex'>
-                <h3 className='m-2'>Services</h3>
-                <h3 className='m-2'>Agency</h3>
-                <h3 className='m-2'>Contact</h3>
+                <h3 className='m-2 align-self-center'><a href="#services">Services</a></h3>
+                <h3 className='m-2 align-self-center'><a href="#team">Agency</a></h3>
+                <h3 className='m-2 align-self-center'><a href="#contact">Contact</a></h3>
               </div>
             </div>
           </div>

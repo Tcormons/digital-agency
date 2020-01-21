@@ -19,5 +19,11 @@
   height: 20vh
 }
 
+.logo {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
 .team {
 }
