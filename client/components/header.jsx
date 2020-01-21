@@ -9,9 +9,9 @@ export default function Header() {
             <div className='d-flex justify-content-between'>
               <div className='m-2'>Logo</div>
               <div className='d-flex'>
-                <div className='m-2'>Services</div>
-                <div className='m-2'>Agency</div>
-                <div className='m-2'>Contact Us</div>
+                <h3 className='m-2'>Services</h3>
+                <h3 className='m-2'>Agency</h3>
+                <h3 className='m-2'>Contact</h3>
               </div>
             </div>
           </div>
