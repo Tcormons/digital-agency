@@ -3,9 +3,9 @@ import React from 'react';
 export default function AboutUs() {
   return (
     <div>
+      <h2 className='col-12 pt-5'>Our Focus</h2>
       <div className="container">
         <div className='pt-5'>
-          <h1 className='text-center rounded'>Our Focus</h1>
           <h3>Experience-Driven Design</h3>
           <p className="mx-4">We develop smart solutions for a digital-first world. We begin with big ideas and connected experiences, and then evolve into targeted executions that deliver on business objectives and brand values.</p>
           <h3>High Craft</h3>
