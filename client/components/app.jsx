@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './header';
 import Banner from './banner';
+import AboutUs from './about-us';
 import Services from './services';
 import Team from './team';
 import Contact from './contact';
@@ -18,6 +19,7 @@ export default class App extends React.Component {
       <div>
         <Header />
         <Banner />
+        <AboutUs />
         <Services />
         <Team />
         <Contact />

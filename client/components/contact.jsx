@@ -3,10 +3,10 @@ import React from 'react';
 export default function Contact() {
   return (
     <div id='contact'>
-      <div className="col-12">
+      <div className="col-12 pt-5">
         <h2>Contact Us</h2>
       </div>
-      <div className='container'>
+      <div className='container pb-5'>
         <div className='row'>
           <form className='col-sm-10 col-md-10 col-lg-8 mx-auto pt-3'>
             <div className='d-flex'>
