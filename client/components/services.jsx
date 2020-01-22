@@ -3,7 +3,7 @@ import React from 'react';
 export default function Services() {
   return (
     <div id="services">
-      <h2 className="col-12 pt-3"> Our Services </h2>
+      <h2 className="col-12 pt-5"> Our Services </h2>
       <div className='container pt-5'>
         <div className='row'>
           <div className='row justify-content-around'>
