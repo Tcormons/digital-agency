@@ -9,7 +9,6 @@ export default function Team() {
   const [isShownProject, setIsShownProject] = useState(false);
   const [isShownDesign, setIsShownDesign] = useState(false);
 
-
   return (
     <div id='team'>
       <div className="col-11 d-flex justify-content-between pt-5">
