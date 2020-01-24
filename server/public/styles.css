@@ -31,12 +31,17 @@
 .logo {
   border-radius: 50%;
   border: 3px solid black;
-  height: 21vw;
-  width: 21vw;
+  height: 80px;
+  width: 80px;
 }
 
 .team {
   position: relative;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .team-info {
@@ -45,6 +50,7 @@
   padding: 25% 5%;
   background-color: rgba(0, 0, 0, 0.623);
   height: 88.2%;
+  animation: fadeIn ease .5s;
 }
 
 a {
