@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <div id="services">
       <h2 className="col-12 pt-5"> Our Services </h2>
-      <div className='container pt-5'>
+      <div className='container-fluid pt-5'>
         <div className='row'>
           <div className='row justify-content-around'>
             <div className='m-3'>
