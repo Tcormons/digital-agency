@@ -10,8 +10,27 @@ import Footer from './footer';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      contactForm: {
+        name: '',
+        email: '',
+        reason: ''
+      }
+      // services: {
+      //   consult: false,
+      //   design: false,
+      //   marketing: false,
+      //   performance: false,
+      //   hosting: false,
+      //   security: false
+      // }
+    };
 
+    this.formUpdate = this.formUpdate.bind(this);
+  }
+
+  formUpdate(event) {
+    this.setState({ [event.target.name]: event.target.value });
   }
 
   render() {
@@ -22,7 +41,9 @@ export default class App extends React.Component {
         <AboutUs />
         <Services />
         <Team />
-        <Contact />
+        <Contact
+          formUpdate={this.formUpdate}
+          props={this.state.contactform} />
         <Footer />
       </div>
 

@@ -1,17 +1,22 @@
+* {
+  overscroll-behavior: none;
+}
+
 .banner {
   background-image: url('./assets/flat-art-city.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -2vh;
-  height: 50vh;
+  height: 70vh;
 }
 
-#team{
+#team {
   background-image: url('./assets/dark-honeycomb.png')
 }
 
 .banner-text {
-  background-color: rgba(109, 109, 109, 0.609);
+  background-color: rgba(109, 109, 109, 0.809);
+  margin-top: 20%;
 }
 
 .asset {
@@ -19,9 +24,20 @@
   height: 30vh;
 }
 
+.about-us {
+  background-image: url('./assets/qbkls.png');
+}
+
 .services {
-  /* width: 100%; */
   height: 200px;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.services-click {
+  background-color: #5f9ea0bf;
+  border-radius: 1%;
+  /* animation: fadeIn ease 5s; */
 }
 
 .logo {
@@ -31,8 +47,28 @@
   width: 80px;
 }
 
-.team {}
+.team {
+  position: relative;
+}
+
+.team-info {
+  position: absolute;
+  top: 0%;
+  padding: 25% 5%;
+  background-color: rgba(0, 0, 0, 0.623);
+  height: 88.2%;
+  animation: fadeIn ease .5s;
+}
 
 a {
   color: black;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
