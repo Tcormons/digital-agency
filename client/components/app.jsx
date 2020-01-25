@@ -15,7 +15,7 @@ export default class App extends React.Component {
         name: '',
         email: '',
         reason: ''
-      },
+      }
       // services: {
       //   consult: false,
       //   design: false,
@@ -26,7 +26,7 @@ export default class App extends React.Component {
       // }
     };
 
-    this.formUpdate = this.formUpdate.bind(this)
+    this.formUpdate = this.formUpdate.bind(this);
   }
 
   formUpdate(event) {

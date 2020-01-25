@@ -1,8 +1,6 @@
 import React from 'react';
-import Services, { isShownConsult } from './services';
 
 export default function Contact(props) {
-  console.log(isShownConsult)
   return (
     <div id='contact'>
       <div className="col-12 pt-5">
@@ -51,7 +49,7 @@ export default function Contact(props) {
                 name='Reason'
                 type='number'
                 placeholder='What can we help with?'
-                value={isShownConsult ? 'Consultation' : false}
+                // value={isShownConsult ? 'Consultation' : false}
                 onChange={props.formUpdate}>
               </textarea>
             </label>
