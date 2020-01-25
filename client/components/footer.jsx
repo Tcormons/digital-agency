@@ -6,12 +6,12 @@ export default function Footer() {
       <div className="container-fluid bg-dark">
         <div className="row">
           <div className="col-12">
-            <div className='d-flex justify-content-between'>
+            <div className='d-flex justify-content-around'>
               <img src='./assets/DALogo.jpg' className='m-2 logo' />
-              <div className='d-flex'>
-                <h3 className='m-2 align-self-center text-white'>Services</h3>
-                <h3 className='m-2 align-self-center text-white'>Agency</h3>
-                <h3 className='m-2 align-self-center text-white'>Contact</h3>
+              <div className='align-self-center text-white'>digitalagency@gmail.com</div>
+              <div className='d-flex flex-column align-self-center'>
+                <div className='align-self-center text-white'>(123)456-7890</div>
+                <div className='align-self-center text-white'>123 Success Dr Laguna Beach, Ca</div>
               </div>
             </div>
           </div>
