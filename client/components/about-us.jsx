@@ -4,7 +4,7 @@ export default function AboutUs() {
   return (
     <div>
       <h2 className='col-12 pt-5 pb-2'>Our Focus</h2>
-      <div className="container-fluid about-us">
+      <div className="container-fluid about-us pb-5">
         <div className='pt-5'>
           <h3>Experience-Driven Design</h3>
           <p className="mx-4">We develop smart solutions for a digital-first world. We begin with big ideas and connected experiences, and then evolve into targeted executions that deliver on business objectives and brand values.</p>

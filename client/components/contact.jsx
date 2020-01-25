@@ -1,6 +1,8 @@
 import React from 'react';
+import Services, { isShownConsult } from './services';
 
-export default function Contact() {
+export default function Contact(props) {
+  console.log(isShownConsult)
   return (
     <div id='contact'>
       <div className="col-12 pt-5">
@@ -20,8 +22,8 @@ export default function Contact() {
                   name='Email'
                   type='text'
                   placeholder='Email'
-                // value={this.state.name}
-                // onChange={this.updateField}
+                  value={props.email}
+                  onChange={props.formUpdate}
                 ></input>
               </label>
               <label className='input-group input-group-sm'>
@@ -34,8 +36,8 @@ export default function Contact() {
                   name='Name'
                   type='text'
                   placeholder='Name'
-                // value={this.state.course}
-                // onChange={this.updateField}
+                  value={props.name}
+                  onChange={props.formUpdate}
                 />
               </label>
             </div>
@@ -45,13 +47,13 @@ export default function Contact() {
                   <i className="fa fa-plus-square fa-fw"></i>
                 </div>
               </div>
-              <textarea className='form-control'
+              <textarea className='align-self-center form-control'
                 name='Reason'
                 type='number'
                 placeholder='What can we help with?'
-              // value={this.state.grade}
-              // onChange={this.updateField}
-              />
+                value={isShownConsult ? 'Consultation' : false}
+                onChange={props.formUpdate}>
+              </textarea>
             </label>
             <button className='add btn btn-primary m-1'
               name='send'
