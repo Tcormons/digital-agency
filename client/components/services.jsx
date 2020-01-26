@@ -12,8 +12,8 @@ export default function Services() {
   return (
     <div id="services">
       <h2 className="col-12 pt-5"> Our Services </h2>
-      <div className='col-12 text-info' > Feel free to click on the services you would like to hear more about and don't forget to send us a message!</div>
-      <div className='container-fluid pt-5'>
+      <div className='col-12 text-info mx-auto' > Feel free to click on the services you would like to hear more about and don't forget to send us a message!</div>
+      <div className='container pt-5'>
         <div className='row'>
           <div className='row justify-content-around'>
             <div className='m-3'>
@@ -59,7 +59,7 @@ export default function Services() {
               <h3 className='text-center'> Security </h3>
             </div>
           </div>
-          <div className='d-flex justify-content-end p-2 mx-auto'>
+          <div className='d-flex justify-content-end p-5 mx-auto'>
             <a href="#contact">
               <button className='btn-primary rounded p-2'>
                 Send us a message!
