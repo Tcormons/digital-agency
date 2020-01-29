@@ -36,7 +36,7 @@ export default class App extends React.Component {
         ...prevState.services,
         [name]: !this.state[name]
       }
-    }))
+    }));
   }
 
   formUpdate(event) {

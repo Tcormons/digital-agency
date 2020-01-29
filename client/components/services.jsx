@@ -41,7 +41,7 @@ export default function Services(props) {
               <div className={`${isShownMarketing ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('marketing');
-                  setIsShownMarketing(!isShownMarketing)
+                  setIsShownMarketing(!isShownMarketing);
                 }}>
                 <img className='services' src='./assets/undraw_online_ad_mg4t.svg'></img>
               </div>
