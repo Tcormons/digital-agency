@@ -59,7 +59,7 @@ export default function Services() {
               <h3 className='text-center'> Security </h3>
             </div>
           </div>
-          <div className='d-flex justify-content-end p-2 mx-auto'>
+          <div className='d-flex justify-content-end p-5 mx-auto'>
             <a href="#contact">
               <button className='btn-primary rounded p-2'>
                 Send us a message!

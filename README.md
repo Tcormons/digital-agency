@@ -1,6 +1,6 @@
 # digital-agency
 
-A frontend React project for a mock digital agency
+A frontend project for a mock digital agency using React Hooks & Redux
 
 Designed for Desktop && Mobile Responsive
 
