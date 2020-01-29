@@ -15,18 +15,28 @@ export default class App extends React.Component {
         name: '',
         email: '',
         reason: ''
+      },
+      services: {
+        consult: false,
+        design: false,
+        marketing: false,
+        performance: false,
+        hosting: false,
+        security: false
       }
-      // services: {
-      //   consult: false,
-      //   design: false,
-      //   marketing: false,
-      //   performance: false,
-      //   hosting: false,
-      //   security: false
-      // }
     };
 
     this.formUpdate = this.formUpdate.bind(this);
+    this.servicesUpdate = this.servicesUpdate.bind(this);
+  }
+
+  servicesUpdate(name) {
+    this.setState(prevState => ({
+      services: {
+        ...prevState.services,
+        [name]: !this.state[name]
+      }
+    }))
   }
 
   formUpdate(event) {
@@ -39,11 +49,15 @@ export default class App extends React.Component {
         <Header />
         <Banner />
         <AboutUs />
-        <Services />
+        <Services
+          servicesUpdate={this.servicesUpdate}
+          props={this.state.services} />
         <Team />
         <Contact
           formUpdate={this.formUpdate}
-          props={this.state.contactform} />
+          props={this.state.contactform}
+          services={this.state.services}
+          servicesUpdate={this.servicesUpdate} />
         <Footer />
       </div>
 

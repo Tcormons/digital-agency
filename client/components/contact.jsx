@@ -48,11 +48,77 @@ export default function Contact(props) {
               <textarea className='align-self-center form-control'
                 name='Reason'
                 type='number'
-                placeholder='What can we help with?'
-                // value={isShownConsult ? 'Consultation' : false}
+                placeholder='Anything else you would like to mention?'
+                value={props.reason}
                 onChange={props.formUpdate}>
               </textarea>
             </label>
+
+            <div className="container">
+              <div className="row">
+                <div className='m-3'>
+                  <div
+                    className={`${props.services.consult ? 'services-contact-click' : ''}`}
+                    onClick={() => {
+                      props.servicesUpdate('consult');
+                      //   setIsShownConsult(!isShownConsult);
+                    }}>
+                    <img className='services-contact' src='./assets/undraw_landing_page_q6hh.svg' />
+                  </div>
+                </div>
+                <div className='m-3'>
+                  <div
+                    className={`${props.services.design ? 'services-contact-click' : ''}`}
+                    onClick={() => {
+                      props.servicesUpdate('design');
+                      //   setIsShownConsult(!isShownConsult);
+                    }}>
+                    <img className='services-contact' src='./assets/undraw_redesign_feedback_48ti.svg' />
+                  </div>
+                </div>
+                <div className='m-3'>
+                  <div
+                    className={`${props.services.marketing ? 'services-contact-click' : ''}`}
+                    onClick={() => {
+                      props.servicesUpdate('marketing');
+                      //   setIsShownConsult(!isShownConsult);
+                    }}>
+                    <img className='services-contact' src='./assets/undraw_online_ad_mg4t.svg' />
+                  </div>
+                </div>
+                <div className='m-3'>
+                  <div
+                    className={`${props.services.perfomance ? 'services-contact-click' : ''}`}
+                    onClick={() => {
+                      props.servicesUpdate('perfomance');
+                      //   setIsShownConsult(!isShownConsult);
+                    }}>
+                    <img className='services-contact' src='./assets/undraw_performance_overview_p9bm.svg' />
+                  </div>
+                </div>
+                <div className='m-3'>
+                  <div
+                    className={`${props.services.hosting ? 'services-contact-click' : ''}`}
+                    onClick={() => {
+                      props.servicesUpdate('hosting');
+                      //   setIsShownConsult(!isShownConsult);
+                    }}>
+                    <img className='services-contact' src='./assets/undraw_server_cluster_jwwq.svg' />
+                  </div>
+                </div>
+                <div className='m-3'>
+                  <div
+                    className={`${props.services.security ? 'services-contact-click' : ''}`}
+                    onClick={() => {
+                      props.servicesUpdate('security');
+                      //   setIsShownConsult(!isShownConsult);
+                    }}>
+                    <img className='services-contact' src='./assets/undraw_two_factor_authentication_namy.svg' />
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <button className='add btn btn-primary m-1'
               name='send'
               type='submit' >
