@@ -1,6 +1,14 @@
 import React from 'react';
 
 export default function Contact(props) {
+
+  const [isShownConsult, setIsShownConsult] = useState(false);
+  const [isShownDesign, setIsShownDesign] = useState(false);
+  const [isShownMarketing, setIsShownMarketing] = useState(false);
+  const [isShownPerformance, setIsShownPerformance] = useState(false);
+  const [isShownHosting, setIsShownHosting] = useState(false);
+  const [isShownSecurity, setIsShownSecurity] = useState(false);
+
   return (
     <div id='contact'>
       <div className="col-12 pt-5">
