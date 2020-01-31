@@ -30,6 +30,7 @@
 
 .services {
   height: 200px;
+  width: 300px;
   padding: 5%;
   cursor: pointer;
 }
@@ -37,7 +38,18 @@
 .services-click {
   background-color: #5f9ea0bf;
   border-radius: 1%;
-  /* animation: fadeIn ease 5s; */
+}
+
+.services-contact {
+  height: 5rem;
+  width: 5rem;
+  padding: 12%;
+  cursor: pointer;
+}
+
+.services-contact-click {
+  background-color: #5f9ea0bf;
+  border-radius: 50%;
 }
 
 .logo {
