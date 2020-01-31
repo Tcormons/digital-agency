@@ -12,8 +12,8 @@ export default function Services(props) {
   return (
     <div id="services">
       <h2 className="col-12 pt-5"> Our Services </h2>
-      <div className='col-12 text-info mx-auto' > Feel free to click on the services you would like to hear more about and don't forget to send us a message!</div>
-      <div className='container pt-5'>
+      <div className='col-12 text-info mx-auto' > Click on the services you would like to hear more about and don't forget to send us a message!</div>
+      <div className='container-fluid pt-5'>
         <div className='row'>
           <div className='row justify-content-around'>
             <div className='m-3'>
