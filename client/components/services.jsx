@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function Services(props) {
 
-  const [isShownConsult, setIsShownConsult] = useState(false);
-  const [isShownDesign, setIsShownDesign] = useState(false);
-  const [isShownMarketing, setIsShownMarketing] = useState(false);
-  const [isShownPerformance, setIsShownPerformance] = useState(false);
-  const [isShownHosting, setIsShownHosting] = useState(false);
-  const [isShownSecurity, setIsShownSecurity] = useState(false);
+  // const [isShownConsult, setIsShownConsult] = useState(false);
+  // const [isShownDesign, setIsShownDesign] = useState(false);
+  // const [isShownMarketing, setIsShownMarketing] = useState(false);
+  // const [isShownPerformance, setIsShownPerformance] = useState(false);
+  // const [isShownHosting, setIsShownHosting] = useState(false);
+  // const [isShownSecurity, setIsShownSecurity] = useState(false);
 
   return (
     <div id="services">
@@ -18,60 +18,60 @@ export default function Services(props) {
           <div className='row justify-content-around'>
             <div className='m-3'>
               <div
-                className={`${isShownConsult ? 'services-click' : ''}`}
+                className={`${props.props.consult ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('consult');
-                  setIsShownConsult(!isShownConsult);
+                  // setIsShownConsult(!isShownConsult);
                 }}>
                 <img className='services' src='./assets/undraw_landing_page_q6hh.svg' />
               </div>
               <h3 className='text-center'> Consulting </h3>
             </div>
             <div className='m-3'>
-              <div className={`${isShownDesign ? 'services-click' : ''}`}
+              <div className={`${props.props.design ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('design');
-                  setIsShownDesign(!isShownDesign);
+                  // setIsShownDesign(!isShownDesign);
                 }}>
                 <img className='services' src='./assets/undraw_redesign_feedback_48ti.svg'></img>
               </div>
               <h3 className='text-center'> Design </h3>
             </div>
             <div className='m-3'>
-              <div className={`${isShownMarketing ? 'services-click' : ''}`}
+              <div className={`${props.props.marketing ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('marketing');
-                  setIsShownMarketing(!isShownMarketing);
+                  // setIsShownMarketing(!isShownMarketing);
                 }}>
                 <img className='services' src='./assets/undraw_online_ad_mg4t.svg'></img>
               </div>
               <h3 className='text-center'> Marketing </h3>
             </div>
             <div className='m-3'>
-              <div className={`${isShownPerformance ? 'services-click' : ''}`}
+              <div className={`${props.props.performance ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('performance');
-                  setIsShownPerformance(!isShownPerformance);
+                  // setIsShownPerformance(!isShownPerformance);
                 }}>
                 <img className='services' src='./assets/undraw_performance_overview_p9bm.svg'></img>
               </div>
               <h3 className='text-center'> Performance </h3>
             </div>
             <div className='m-3'>
-              <div className={`${isShownHosting ? 'services-click' : ''}`}
+              <div className={`${props.props.hosting ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('hosting');
-                  setIsShownHosting(!isShownHosting);
+                  // setIsShownHosting(!isShownHosting);
                 }}>
                 <img className='services' src='./assets/undraw_server_cluster_jwwq.svg'></img>
               </div>
               <h3 className='text-center'> Hosting </h3>
             </div>
             <div className='m-3'>
-              <div className={`${isShownSecurity ? 'services-click' : ''}`}
+              <div className={`${props.props.security ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('security');
-                  setIsShownSecurity(!isShownSecurity);
+                  // setIsShownSecurity(!isShownSecurity);
                 }}>
                 <img className='services' src='./assets/undraw_two_factor_authentication_namy.svg'></img>
               </div>

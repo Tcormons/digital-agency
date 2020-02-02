@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function Contact(props) {
 
-  const [isShownConsult, setIsShownConsult] = useState(false);
-  const [isShownDesign, setIsShownDesign] = useState(false);
-  const [isShownMarketing, setIsShownMarketing] = useState(false);
-  const [isShownPerformance, setIsShownPerformance] = useState(false);
-  const [isShownHosting, setIsShownHosting] = useState(false);
-  const [isShownSecurity, setIsShownSecurity] = useState(false);
+  // const [isShownConsult, setIsShownConsult] = useState(props.props.consult);
+  // const [isShownDesign, setIsShownDesign] = useState(props.props.design);
+  // const [isShownMarketing, setIsShownMarketing] = useState(props.props.marketing);
+  // const [isShownPerformance, setIsShownPerformance] = useState(props.props.performance);
+  // const [isShownHosting, setIsShownHosting] = useState(props.props.hosting);
+  // const [isShownSecurity, setIsShownSecurity] = useState(props.props.security);
 
   return (
     <div id='contact'>
@@ -25,7 +25,7 @@ export default function Contact(props) {
                   </div>
                 </div>
                 <input className='form-control'
-                  name='Email'
+                  name='email'
                   type='text'
                   placeholder='Email'
                   value={props.email}
@@ -39,7 +39,7 @@ export default function Contact(props) {
                   </div>
                 </div>
                 <input className='form-control'
-                  name='Name'
+                  name='name'
                   type='text'
                   placeholder='Name'
                   value={props.name}
@@ -54,7 +54,7 @@ export default function Contact(props) {
                 </div>
               </div>
               <textarea className='align-self-center form-control'
-                name='Reason'
+                name='reason'
                 type='number'
                 placeholder='Anything else you would like to mention?'
                 value={props.reason}
@@ -63,63 +63,63 @@ export default function Contact(props) {
             </label>
 
             <div className="container">
-              <div className="row">
-                <div className='m-3'>
+              <div className="row mx-auto">
+                <div className='m-2'>
                   <div
-                    className={`${props.services.consult ? 'services-contact-click' : ''}`}
+                    className={`${props.props.consult ? 'services-contact-click' : ''}`}
                     onClick={() => {
                       props.servicesUpdate('consult');
-                      //   setIsShownConsult(!isShownConsult);
+                        // setIsShownConsult(!isShownConsult);
                     }}>
                     <img className='services-contact' src='./assets/undraw_landing_page_q6hh.svg' />
                   </div>
                 </div>
-                <div className='m-3'>
+                <div className='m-2'>
                   <div
-                    className={`${props.services.design ? 'services-contact-click' : ''}`}
+                    className={`${props.props.design ? 'services-contact-click' : ''}`}
                     onClick={() => {
                       props.servicesUpdate('design');
-                      //   setIsShownConsult(!isShownConsult);
+                        // setIsShownDesign(!isShownDesign);
                     }}>
                     <img className='services-contact' src='./assets/undraw_redesign_feedback_48ti.svg' />
                   </div>
                 </div>
-                <div className='m-3'>
+                <div className='m-2'>
                   <div
-                    className={`${props.services.marketing ? 'services-contact-click' : ''}`}
+                    className={`${props.props.marketing ? 'services-contact-click' : ''}`}
                     onClick={() => {
                       props.servicesUpdate('marketing');
-                      //   setIsShownConsult(!isShownConsult);
+                        // setIsShownMarketing(!isShownMarketing);
                     }}>
                     <img className='services-contact' src='./assets/undraw_online_ad_mg4t.svg' />
                   </div>
                 </div>
-                <div className='m-3'>
+                <div className='m-2'>
                   <div
-                    className={`${props.services.perfomance ? 'services-contact-click' : ''}`}
+                    className={`${props.props.performance ? 'services-contact-click' : ''}`}
                     onClick={() => {
-                      props.servicesUpdate('perfomance');
-                      //   setIsShownConsult(!isShownConsult);
+                      props.servicesUpdate('performance');
+                        // setIsShownPerformance(!isShownPerformance);
                     }}>
                     <img className='services-contact' src='./assets/undraw_performance_overview_p9bm.svg' />
                   </div>
                 </div>
-                <div className='m-3'>
+                <div className='m-2'>
                   <div
-                    className={`${props.services.hosting ? 'services-contact-click' : ''}`}
+                    className={`${props.props.hosting ? 'services-contact-click' : ''}`}
                     onClick={() => {
                       props.servicesUpdate('hosting');
-                      //   setIsShownConsult(!isShownConsult);
+                        // setIsShownHosting(!isShownHosting);
                     }}>
                     <img className='services-contact' src='./assets/undraw_server_cluster_jwwq.svg' />
                   </div>
                 </div>
-                <div className='m-3'>
+                <div className='m-2'>
                   <div
-                    className={`${props.services.security ? 'services-contact-click' : ''}`}
+                    className={`${props.props.security ? 'services-contact-click' : ''}`}
                     onClick={() => {
                       props.servicesUpdate('security');
-                      //   setIsShownConsult(!isShownConsult);
+                        // setIsShownSecurity(!isShownSecurity);
                     }}>
                     <img className='services-contact' src='./assets/undraw_two_factor_authentication_namy.svg' />
                   </div>
