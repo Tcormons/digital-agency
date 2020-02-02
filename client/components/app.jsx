@@ -11,19 +11,15 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      contactForm: {
-        name: '',
-        email: '',
-        reason: ''
-      },
-      services: {
-        consult: false,
-        design: false,
-        marketing: false,
-        performance: false,
-        hosting: false,
-        security: false
-      }
+      name: '',
+      email: '',
+      reason: '',
+      consult: false,
+      design: false,
+      marketing: false,
+      performance: false,
+      hosting: false,
+      security: false
     };
 
     this.formUpdate = this.formUpdate.bind(this);
@@ -31,12 +27,7 @@ export default class App extends React.Component {
   }
 
   servicesUpdate(name) {
-    this.setState(prevState => ({
-      services: {
-        ...prevState.services,
-        [name]: !this.state[name]
-      }
-    }));
+    this.setState({ [name]: !this.state[name] });
   }
 
   formUpdate(event) {
@@ -51,12 +42,11 @@ export default class App extends React.Component {
         <AboutUs />
         <Services
           servicesUpdate={this.servicesUpdate}
-          props={this.state.services} />
+          props={this.state}/>
         <Team />
         <Contact
           formUpdate={this.formUpdate}
-          props={this.state.contactform}
-          services={this.state.services}
+          props={this.state}
           servicesUpdate={this.servicesUpdate} />
         <Footer />
       </div>
