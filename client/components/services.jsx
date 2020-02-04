@@ -2,18 +2,11 @@ import React from 'react';
 
 export default function Services(props) {
 
-  // const [isShownConsult, setIsShownConsult] = useState(false);
-  // const [isShownDesign, setIsShownDesign] = useState(false);
-  // const [isShownMarketing, setIsShownMarketing] = useState(false);
-  // const [isShownPerformance, setIsShownPerformance] = useState(false);
-  // const [isShownHosting, setIsShownHosting] = useState(false);
-  // const [isShownSecurity, setIsShownSecurity] = useState(false);
-
   return (
     <div id="services">
       <h2 className="col-12 pt-5"> Our Services </h2>
       <div className='col-12 text-info mx-auto' > Click on the services you would like to hear more about and don't forget to send us a message!</div>
-      <div className='container-fluid pt-5'>
+      <div className='container pt-5'>
         <div className='row'>
           <div className='row justify-content-around'>
             <div className='m-3'>
@@ -21,7 +14,6 @@ export default function Services(props) {
                 className={`${props.props.consult ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('consult');
-                  // setIsShownConsult(!isShownConsult);
                 }}>
                 <img className='services' src='./assets/undraw_landing_page_q6hh.svg' />
               </div>
@@ -31,7 +23,6 @@ export default function Services(props) {
               <div className={`${props.props.design ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('design');
-                  // setIsShownDesign(!isShownDesign);
                 }}>
                 <img className='services' src='./assets/undraw_redesign_feedback_48ti.svg'></img>
               </div>
@@ -41,7 +32,6 @@ export default function Services(props) {
               <div className={`${props.props.marketing ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('marketing');
-                  // setIsShownMarketing(!isShownMarketing);
                 }}>
                 <img className='services' src='./assets/undraw_online_ad_mg4t.svg'></img>
               </div>
@@ -51,7 +41,6 @@ export default function Services(props) {
               <div className={`${props.props.performance ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('performance');
-                  // setIsShownPerformance(!isShownPerformance);
                 }}>
                 <img className='services' src='./assets/undraw_performance_overview_p9bm.svg'></img>
               </div>
@@ -61,7 +50,6 @@ export default function Services(props) {
               <div className={`${props.props.hosting ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('hosting');
-                  // setIsShownHosting(!isShownHosting);
                 }}>
                 <img className='services' src='./assets/undraw_server_cluster_jwwq.svg'></img>
               </div>
@@ -71,7 +59,6 @@ export default function Services(props) {
               <div className={`${props.props.security ? 'services-click' : ''}`}
                 onClick={() => {
                   props.servicesUpdate('security');
-                  // setIsShownSecurity(!isShownSecurity);
                 }}>
                 <img className='services' src='./assets/undraw_two_factor_authentication_namy.svg'></img>
               </div>

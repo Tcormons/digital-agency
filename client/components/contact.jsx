@@ -56,7 +56,7 @@ export default function Contact(props) {
             </label>
 
             <div className="container">
-              <div className="row mx-auto">
+              <div className="row justify-content-around">
                 <div className='m-2'>
                   <div
                     className={`${props.props.consult ? 'services-contact-click' : ''}`}
