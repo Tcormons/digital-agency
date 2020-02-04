@@ -2,13 +2,6 @@ import React from 'react';
 
 export default function Contact(props) {
 
-  // const [isShownConsult, setIsShownConsult] = useState(props.props.consult);
-  // const [isShownDesign, setIsShownDesign] = useState(props.props.design);
-  // const [isShownMarketing, setIsShownMarketing] = useState(props.props.marketing);
-  // const [isShownPerformance, setIsShownPerformance] = useState(props.props.performance);
-  // const [isShownHosting, setIsShownHosting] = useState(props.props.hosting);
-  // const [isShownSecurity, setIsShownSecurity] = useState(props.props.security);
-
   return (
     <div id='contact'>
       <div className="col-12 pt-5">
@@ -69,7 +62,6 @@ export default function Contact(props) {
                     className={`${props.props.consult ? 'services-contact-click' : ''}`}
                     onClick={() => {
                       props.servicesUpdate('consult');
-                        // setIsShownConsult(!isShownConsult);
                     }}>
                     <img className='services-contact' src='./assets/undraw_landing_page_q6hh.svg' />
                   </div>
@@ -79,7 +71,6 @@ export default function Contact(props) {
                     className={`${props.props.design ? 'services-contact-click' : ''}`}
                     onClick={() => {
                       props.servicesUpdate('design');
-                        // setIsShownDesign(!isShownDesign);
                     }}>
                     <img className='services-contact' src='./assets/undraw_redesign_feedback_48ti.svg' />
                   </div>
@@ -89,7 +80,6 @@ export default function Contact(props) {
                     className={`${props.props.marketing ? 'services-contact-click' : ''}`}
                     onClick={() => {
                       props.servicesUpdate('marketing');
-                        // setIsShownMarketing(!isShownMarketing);
                     }}>
                     <img className='services-contact' src='./assets/undraw_online_ad_mg4t.svg' />
                   </div>
@@ -99,7 +89,6 @@ export default function Contact(props) {
                     className={`${props.props.performance ? 'services-contact-click' : ''}`}
                     onClick={() => {
                       props.servicesUpdate('performance');
-                        // setIsShownPerformance(!isShownPerformance);
                     }}>
                     <img className='services-contact' src='./assets/undraw_performance_overview_p9bm.svg' />
                   </div>
@@ -109,7 +98,6 @@ export default function Contact(props) {
                     className={`${props.props.hosting ? 'services-contact-click' : ''}`}
                     onClick={() => {
                       props.servicesUpdate('hosting');
-                        // setIsShownHosting(!isShownHosting);
                     }}>
                     <img className='services-contact' src='./assets/undraw_server_cluster_jwwq.svg' />
                   </div>
@@ -119,7 +107,6 @@ export default function Contact(props) {
                     className={`${props.props.security ? 'services-contact-click' : ''}`}
                     onClick={() => {
                       props.servicesUpdate('security');
-                        // setIsShownSecurity(!isShownSecurity);
                     }}>
                     <img className='services-contact' src='./assets/undraw_two_factor_authentication_namy.svg' />
                   </div>
