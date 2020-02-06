@@ -14,7 +14,6 @@ export default function Team() {
       <div className="col-11 d-flex justify-content-between pt-5">
         <h2 className="text-white"> Meet the team </h2>
         <div className='align-self-center'>
-          {/* <i className="fas fa-chevron-down fa-2x"></i> */}
         </div>
       </div>
       <div className='container pt-3'>
