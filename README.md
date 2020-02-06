@@ -1,6 +1,6 @@
 # digital-agency
 
-A frontend project for a mock digital agency using React Hooks & Redux
+A frontend project for a mock digital agency using React Hooks
 
 Designed for Desktop && Mobile Responsive
 
@@ -16,7 +16,7 @@ Maintained by `tcormons`
 - AWS EC2
 
 ## Feature List
-- in progress
+User 
 
 ## DEMO
 
