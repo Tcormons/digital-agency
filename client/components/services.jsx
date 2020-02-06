@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Services(props) {
-//test code
+// test code
   return (
     <div id="services">
       <h2 className="col-12 pt-5"> Our Services </h2>
