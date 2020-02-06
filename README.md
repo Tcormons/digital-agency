@@ -16,15 +16,13 @@ Maintained by `tcormons`
 - AWS EC2
 
 ## Feature List
-User 
+- User can jump to specific section on the page
+- User can select services they are interested in knowing more about
+- User can hover over the employees to read about their role
+- User can send a message to the company with the selected services included
 
 ## DEMO
-
-## Example
-
-
-Mobile View
-
+![digital-agency-readme](https://user-images.githubusercontent.com/26559330/73911117-0a022c00-4866-11ea-8368-32ce2ca88aae.gif)
 
 ## Development
 ### System Requirements
